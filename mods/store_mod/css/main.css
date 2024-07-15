@@ -1,0 +1,622 @@
+body,
+div,
+p,
+h1,
+h2,
+img,
+ul,
+li,
+a,
+form,
+textarea,
+input,
+button,
+table,
+th,
+tr,
+td,
+span {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+button,
+input {
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input {
+  outline: 0;
+  background: transparent;
+}
+
+a:focus {
+  outline: none;
+}
+
+li {
+  list-style-type: none;
+  display: block;
+}
+
+section, article, aside, footer, header, nav {
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+.flex-core {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.flex-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.flex-center-start {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-center-end {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.flex-end-center {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.lg-mb-16 {
+  margin-bottom: 16px;
+}
+
+.lg-ml-41 {
+  margin-left: 41px;
+}
+
+html, body {
+  background: hsl(0, 0%, 99%);
+  font-family: monospace;
+  color: hsl(0, 0%, 8%);
+}
+
+.invis {
+  display: none;
+}
+
+.dim {
+  opacity: 0.1;
+}
+
+.wrap {
+  height: 100vh;
+}
+
+.wallet-wrap {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.form-ctr {
+  width: 560px;
+  height: 239px;
+}
+
+.nfo-ctr-2 {
+  width: 560px;
+  height: 66px;
+  background: white;
+  background-image: url(../img/input-bg-v3.svg);
+  background-size: 560px 66px;
+  background-repeat: no-repeat;
+}
+
+.nfo-sub-ctr-3 {
+  width: 453px;
+  margin-bottom: 33px;
+}
+
+.nfo-ctr-4,
+.nfo-ctr-5,
+.nfo-ctr-6 {
+  width: 560px;
+  height: 65px;
+  border: 2px solid black;
+  background: white;
+}
+
+.nfo-ctr-5 {
+  margin-top: -2px;
+}
+
+.nfo-ctr-6 {
+  margin-top: -2px;
+  height: 255px;
+}
+
+.connect-enabled-2:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.connect-enabled:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.connect-disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.nfo-p1,
+.nfo-p2,
+.nfo-p3 {
+  font-family: monospace;
+  font-size: 15.6px;
+  text-transform: uppercase;
+  padding-left: 16px;
+  font-weight: bold;
+}
+
+.nfo-p2 {
+  font-weight: normal;
+  padding-left: 0;
+  text-transform: lowercase;
+}
+
+.nfo-p3 {
+  color: hsl(0, 0%, 99%);
+  font-size: 26.9px;
+  padding-left: 66px;
+}
+
+.nfo-p4 {
+  font-family: monospace;
+  font-size: 15.6px;
+  font-weight: normal;
+  padding-left: 0;
+}
+
+.nfo-p5 {
+  font-family: monospace;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: hsl(0, 0%, 99%);
+  font-size: 26.9px;
+}
+
+.nfo-p5 span {
+  font-size: 30px;
+}
+
+.nfo-p6,
+.nfo-p7 {
+  font-family: monospace;
+  font-size: 22.7px;
+  font-weight: bold;
+  padding-left: 25px;
+  color: #000;
+}
+
+.nfo-p7 {
+  padding-left: 10px;
+  font-weight: normal;
+}
+
+.nfo-p8 {
+  font-family: monospace;
+  font-size: 15.6px;
+  color: #000;
+  line-height: 1;
+  margin-left: -35px;
+}
+
+.nfo-p8 span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nfo-sep-1 {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.btn-01,
+.btn-02 {
+  width: 214px;
+  height: 107px;
+  border: 2px solid black;
+  font-size: 26.9px;
+  text-transform: uppercase;
+  margin: 0 12.5px 41px 12.5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-02 {
+  background: #000;
+  color: white;
+}
+
+.btn-01:hover,
+.btn-02:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#hack-dollars-trigger {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* [MOD 2 REFACTOR] */
+.machine-ctr {
+  width: 560px;
+  height: 453px;
+  font-size: 95px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.machine-ctr-s1 {
+  width: 280px;
+  height: 453px;
+  border-top: 2px solid black;
+  border-right: 0;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.machine-ctr-el2,
+.machine-ctr-el3 {
+  width: 280px;
+  height: 226.5px;
+}
+
+.machine-ctr-el2 {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.machine-ctr-el3 {
+  border-top: 0;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.nfo-ctr-0 {
+  width: 560px;
+  height: 66px;
+  background: white;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.nfo-ctr-1 {
+  width: 560px;
+  height: 66px;
+  background: white;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.nfo-ctr-3 {
+  width: 560px;
+  height: 107px;
+  background: #000;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  clip-path: polygon(0% 75%, 5% 100%, 97% 100%, 100% 85%, 100% 0%, 0% 0%);
+}
+
+.nfo-sub-ctr-1 {
+  width: 212px;
+  height: 107px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  background: #000;
+  color: #FFF;
+  clip-path: polygon(15% 100%, 0% 70%, 0% 0%, 100% 0%, 100% 100%);
+}
+
+.nfo-sub-ctr-2 {
+  width: 348px;
+  height: 107px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.machine-shop-fn-ctr {
+  width: 108px;
+  height: 453px;
+  background: #000;
+  margin-left: -107px;
+  clip-path: polygon(100% 100%, 0% 75%, 0% 5%, 20% 0%, 100% 0%, 100% 100%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.machine-shop-fn-ctr p {
+  color: #FFF;
+  font-size: 23px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  line-height: 0.8;
+  font-weight: normal;
+  padding: 5px;
+}
+
+.machine-shop-fn-ctr p span {
+  font-weight: bold;
+}
+
+.machine-shop-fn-p {
+  margin-top: -50px;
+}
+
+.machine-shop-fn-ctr:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.machine-shop-el-ctr {
+  width: 280px;
+  height: 173px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.machine-shop-el-s1 {
+  width: 280px;
+  height: 132px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.machine-shop-el-s2 {
+  width: 280px;
+  height: 41px;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.machine-shop-el-s1-a {
+  width: 239px;
+  height: 132px;
+  border-right: 2px solid black;
+}
+
+.machine-shop-el-selected {
+  color: #F04FAA;
+}
+
+.machine-shop-el-s1-a p,
+.machine-shop-el-s1-b-1 p,
+.machine-shop-el-s2-b p {
+  font-family: monospace;
+}
+
+.machine-shop-el-s1-a p {
+  font-size: 59.2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: -20px;
+}
+
+.machine-shop-el-s1-b {
+  width: 41px;
+  height: 132px;
+}
+
+.machine-shop-el-s1-b-1 {
+  width: 41px;
+  height: 41px;
+  border-bottom: 2px solid black;
+}
+
+.machine-shop-el-s1-b-1 p {
+  font-size: 22.7px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.machine-shop-el-s1-b-2 {
+  width: 41px;
+  height: 91px;
+}
+
+.machine-shop-el-s2-a {
+  width: 107px;
+  height: 41px;
+  border-right: 2px solid black;
+}
+
+.machine-shop-el-s2-b {
+  width: 173px;
+  height: 41px;
+}
+
+.machine-shop-el-s2-b p {
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.machine-shop-el-s2-b p span {
+  font-size: 21.9px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.machine-shop-ui-2 {
+  width: 66px;
+  height: 66px;
+  margin-top: -65px;
+  margin-left: -1px;
+  border: 2px solid black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.machine-shop-ui-2 p {
+  font-size: 30px;
+  width: 25px;
+  height: 45px;
+}
+
+.machine-shop-price-ctr {
+  width: 840px;
+  height: 89px;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-left: -65px;
+}
+
+.machine-upgrade-price-ctr {
+  font-family: monospace;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.machine-upgrade-price-div {
+  font-family: monospace;
+  font-size: 22px;
+  opacity: 0.3;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.machine-shop-upgrade-ctr {
+  width: 840px;
+  height: 105px;
+  border-left: 2px solid black;
+  margin-left: -65px;
+}
+
+.machine-shop-upgrade-price {
+  font-family: monospace;
+  width: 280px;
+  height: 105px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  font-size: 42px;
+}
+
+.machine-shop-upgrade-btn {
+  width: 560px;
+  height: 105px;
+  background: #000;
+  color: #fff;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  clip-path: polygon(0% 0%, 0% 100%, 97% 100%, 100% 85%, 100% 0%, 0% 0%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}

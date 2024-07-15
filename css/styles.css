@@ -22,6 +22,7 @@ body {
     align-items: center;
     height: 100%;
     position: relative;
+    flex-direction: column
 }
 
 /* Logo */
@@ -56,3 +57,8 @@ body {
     height: 100%;
     transition: .3s ease all;
 }
+
+.lg-mt-41 {
+    margin-top: 41px;
+}
+
