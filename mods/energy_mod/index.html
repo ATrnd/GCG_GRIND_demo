@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>GCG|Grind|EnergyMod</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    let selectedEnergyAmnt        = 0;
+    let userEnergy                = 0;
+    let userMaxEnergy             = 100;
+    let hackedDollars             = 0;
+    let machineUpgradeATypeMainUI = 'a';
+    let machineUpgradeBTypeMainUI = 'b';
+    let machineUpgradeCTypeMainUI = 'c';
+
+    function setState(newState) {
+        switch (newState) {
+            case 1:
+                setupStateOne();
+                break;
+            case 2:
+                setupStateTwo();
+                break;
+            case 3:
+                setupStateThree();
+                break;
+            case 4:
+                setupStateFour();
+                break;
+            case 5:
+                setupStateFive();
+                break;
+            case 6:
+                setupStateSix();
+                break;
+            case 7:
+                setupStateSeven();
+                break;
+            case 8:
+                setupStateEight();
+                break;
+            default:
+                console.log("Unknown state");
+        }
+        logStateChange(newState);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        setState(1);
+    });
+
+</script>
+
+<script src="js/util.js"></script>
+<script src="js/state1.js"></script>
+<script src="js/state2.js"></script>
+<script src="js/state3.js"></script>
+<script src="js/state4.js"></script>
+<script src="js/state5.js"></script>
+<script src="js/state6.js"></script>
+<script src="js/state7.js"></script>
+<script src="js/state8.js"></script>
+<script src="js/logger.js"></script>
+
+</body>
+</html>
