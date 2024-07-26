@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<script type="text/javascript">
+
+    let tradeTokenGrindValue         = 0;
+    let tradeTokenXyzValue           = 0;
+    let tradeTokenHackedDollarValueB = 0;
+    let tradeTokenHackedDollarValueA = 0;
+    let claimValueType1              = 0;
+    let claimValueType2              = 0;
+    let claimValueType3              = 0;
+    let claimState                   = false;
+    let isCounter1Completed          = false;
+    let isCounter2Completed          = false;
+    let isCounter3Completed          = false;
+    let isCounter1Active             = false;
+    let isCounter2Active             = false;
+    let isCounter3Active             = false;
+    let grindState                   = false;
+    let claimData                    = [];
+    let grindData                    = [];
+    let selectedEnergyAmnt           = 0;
+    let userEnergy                   = 0;
+    let userMaxEnergy                = 100;
+    let hackedDollars                = 0;
+    let gcgTokens                    = 0;
+    let machineUpgradeATypeMainUI    = 'a';
+    let machineUpgradeBTypeMainUI    = 'b';
+    let machineUpgradeCTypeMainUI    = 'c';
+
+    function setState(newState) {
+        switch (newState) {
+            case 1:
+                setupStateOne();
+                break;
+            case 2:
+                setupStateTwo();
+                break;
+            case 3:
+                setupStateThree();
+                break;
+            case 4:
+                setupStateFour();
+                break;
+            case 5:
+                setupStateFive();
+                break;
+            case 6:
+                setupStateSix();
+                break;
+            case 7:
+                setupStateSeven();
+                break;
+            case 8:
+                setupStateEight();
+                break;
+            case 9:
+                setupStateNine();
+                break;
+            case 10:
+                setupStateTen();
+                break;
+            case 11:
+                setupStateEleven();
+                break;
+            case 12:
+                setupStateTwelve();
+                break;
+            case 13:
+                setupStateThirteen();
+                break;
+            case 14:
+                setupStateFourteen();
+                break;
+            default:
+                console.log("Unknown state");
+        }
+        logStateChange(newState);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        setState(1);
+    });
+
+</script>
+
+<script src="js/util.js"></script>
+<script src="js/state1.js"></script>
+<script src="js/state2.js"></script>
+<script src="js/state3.js"></script>
+<script src="js/state4.js"></script>
+<script src="js/state5.js"></script>
+<script src="js/state6.js"></script>
+<script src="js/state7.js"></script>
+<script src="js/state8.js"></script>
+<script src="js/state9.js"></script>
+<script src="js/state10.js"></script>
+<script src="js/state11.js"></script>
+<script src="js/state12.js"></script>
+<script src="js/state13.js"></script>
+<script src="js/state14.js"></script>
+<script src="js/logger.js"></script>
+
+</body>
+</html>
+
